@@ -67,18 +67,20 @@ body {
 }
 
 .prompt-container {
-    place-content: flex-end center;
+    place-content: center;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 16px;
+    gap: 30px;
     height: min-content;
     padding: 0px;
     width: min-content;
 }
 
 .prompt-box {
+    margin-bottom: 10px;
     border-bottom-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
     border-left-width: 1px;
@@ -93,12 +95,12 @@ body {
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
-    height: 150px;
+    height: 15px;
     overflow: hidden;
     padding: 20px;
     position: relative;
-    width: 610px;
-    max-width: 1200px;
+    width: 60vw;
+    max-width:80vw;
     will-change: transform;
     overflow: auto;
     outline: none;
@@ -113,7 +115,7 @@ body {
     text-transform: none;
 }
 
-textarea {
+input {
     font-family: 'Manrope', sans-serif;
 }
 
@@ -127,7 +129,7 @@ textarea {
     display: flex;
     place-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex: 0 0 auto;
     flex-flow: row nowrap;
     gap: 12px;
@@ -275,7 +277,7 @@ textarea {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 10px;
+    gap: 1px;
     height: min-content;
     max-width: 1200px;
     overflow: hidden;
@@ -338,9 +340,6 @@ textarea {
         width: 100%;
     }
 
-    .prompt-box {
-        width: 100%;
-    }
 }
 
 @media (max-width: 809px) {
@@ -354,9 +353,6 @@ textarea {
         width: 100%;
     }
 
-    .prompt-box {
-        width: 100%;
-    }
 }
 
 @media (max-width: 600px) {
@@ -386,9 +382,6 @@ textarea {
         width: 100%;
     }
 
-    .prompt-box {
-        width: 100%;
-    }
 }
 
 
