@@ -14,7 +14,7 @@ const App = () => {
     const options = {
       method: 'GET',
       url: `https://danielthepope-countdown-v1.p.rapidapi.com/solve/${input}`,
-      params: { variance: '1' },
+      params: { variance: '-1' },
       headers: {
         'X-RapidAPI-Key': 'a2900a56b4msh050f7bad87089c9p12cf3ajsnbb42f5181361',
         'X-RapidAPI-Host': 'danielthepope-countdown-v1.p.rapidapi.com'
