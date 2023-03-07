@@ -61,11 +61,16 @@ const App = () => {
                   <h3>Output</h3>
                 </div>
               </div>
+              
+              <div className="output-content">
               {anagrams.map((anagram) => (
-                <div className="output-content">
-                  <p>{anagram.word} - {anagram.length} letters</p>
-                </div>
+                <>
+                  {anagram.length > 2 && (
+                    <p>{anagram.word}<br /><i>({anagram.length} letters)</i></p>
+                  )}
+                  </>
               ))}
+              </div>
             </div>
             :
             <div className="output">
